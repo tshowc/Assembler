@@ -1,5 +1,4 @@
 run: compile
-	./MyAssembler $(asmFile)
-
-compile: MyAssembler.cpp
-	g++ -o MyAssembler MyAssembler.cpp
+	java MyAssembler $(asmfile)
+compile: MyAssembler.java
+	javac MyAssembler.java
