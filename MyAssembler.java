@@ -59,7 +59,7 @@ public class MyAssembler{
 					if(line.indexOf('/') != -1){
 					line = line.substring(0,line.indexOf('/'));}
 				//	System.out.println(line.charAt(0));
-					System.out.println(line);
+			//		System.out.println(line);
 					if ((line.length() > 0) && ((line.charAt(0) == '@') || (line.charAt(0)=='('))){//A-INSTRUCTION
 				//		System.out.println("A-INSTRUCTION");
 					//      Initialize index[0] to 0
@@ -203,7 +203,7 @@ public class MyAssembler{
 			if (Character.isLetter(aLine.charAt(0))){
 				//HASHMAP PALOOZA
 	
-				System.out.println(aLine);
+//				System.out.println(aLine);
 				if (memMap.containsKey(aLine)){
 							
 					numALine = memMap.get(aLine);
@@ -222,7 +222,7 @@ public class MyAssembler{
 
 		
 
-		System.out.println(numALine);
+//		System.out.println(numALine);
 		return numALine; 
 	
 
@@ -317,7 +317,7 @@ public class MyAssembler{
 		case "JLE": Jump = "110";
 		break;
 		case "JMP": Jump = "111";
-			System.out.println("IN JMP");
+		//	System.out.println("IN JMP");
 		break;
 		default: System.out.println("ERROR IN JUMP");
 		}
